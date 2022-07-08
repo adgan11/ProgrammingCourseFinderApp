@@ -1,16 +1,36 @@
-html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #101827;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.card {
+  border: 10px solid #101827;
+  text-align: center;
+  padding: 20px;
+  background-color: #1f2937;
+  transition: transform 0.2s;
 }
 
-* {
-  box-sizing: border-box;
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card-container {
+  padding: 30px;
+}
+
+.tag {
+  background-color: black;
+  width: 10%;
+  height: 30%;
+  margin: 10px;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
