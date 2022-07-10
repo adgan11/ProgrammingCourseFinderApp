@@ -16,24 +16,23 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Add a new course
 
-<ul><h3>Go to the <a href="https://github.com/adgan11/ProgrammingCourseFinderApp/blob/main/public/data.json">data.json</a> file</h3></ul>
-<ul><h3>And paste the following template inside [ ]</h3></ul>
+- Go to the [data.json](https://github.com/adgan11/ProgrammingCourseFinderApp/blob/main/public/data.json) file
+- And paste the following template inside the array
 
-<code>
-{ <br />
-        "name": "NAME OF COURSE", <br />
-        "instructor": "INSTRUCTOR OF THE COURSE",<br />
-        "url": "URL://OF/THE/COURSE", <br />
-        "description": "DESCRIPTION OF THE COURSE", <br />
-        "image": "LINK TO THE IMAGE FOR THE COURSE CARD", <br />
-        "tags": [ <br />
-            "TAGS", <br />
-            "FOR", <br />
-            "THE", <br />
-            "COURSE" <br />
-        ] <br />
-    },
- </code>
- 
+```json
+{
+  "name": "NAME OF COURSE",
+  "instructor": "INSTRUCTOR OF THE COURSE",
+  "url": "URL://OF/THE/COURSE",
+  "description": "DESCRIPTION OF THE COURSE",
+  "image": "LINK TO THE IMAGE FOR THE COURSE CARD",
+  "tags": [
+    "TAGS",
+    "FOR",
+    "THE",
+    "COURSE"
+  ] 
+}
+```
  <ul><h3>Edit the attributes and push the changes and that's it!</h3></ul>
 
