@@ -34,3 +34,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+}
+
+#search {
+  width: 25%;
+  height: 30px;
+  border: 1px solid #101827;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
