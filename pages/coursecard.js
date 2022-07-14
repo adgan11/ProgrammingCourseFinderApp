@@ -1,8 +1,10 @@
+import { Prisma } from '.prisma/client';
 import * as React from 'react';
 
 import data from '../public/data.json';
 
-export default function courseCard() {
+
+export default function courseCard(props) {
 
     const handleClick = (dataUrl) => {
         window.open(dataUrl, "_blank");
@@ -10,28 +12,24 @@ export default function courseCard() {
 
     return (
         <>
-            {data.map(dataName => (
-                <div onClick={() => handleClick(dataName.url)} className="card">
+                <div onClick={() => handleClick(props.url)} className="card">
                     <h1>
-                        {dataName.name}
+                        {props.name}
                     </h1>
                     <p>
-                        {dataName.description}
+                        {props.description}
                     </p>
                     <h3>
-                        Instructor: {dataName.instructor}
+                        Instructor: {props.instructor}
                     </h3>
                     <div className="tag-container">
-                        {dataName.tags.map(tag => (
+                        {props.tags.map(tag => (
                             <div className="tag">
                                 {tag}
                             </div>
                         ))}
-                    </div>
+                        </div>
                 </div>
-            ))
-            }
-
         </>
     )
 }

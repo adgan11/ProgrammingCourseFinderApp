@@ -10,13 +10,8 @@ datasource db {
 }
 
 model Course {
-  id          String  @id @default(cuid())
-  name        String
-  instructor  String
-  url         String
-  description String
-  image       String
-  tags        String?
+  id   String @id @default(cuid())
+  data Json?
 
   @@map(name: "courses")
 }
