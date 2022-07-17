@@ -20,6 +20,8 @@ export async function getStaticProps() {
   };
 };
 
+//Previous logic used to display the cards :-
+
 //for (let i = 0; i< courseData.length; i++) {
   //let createMany = await prisma.course.create({
     //data: {
